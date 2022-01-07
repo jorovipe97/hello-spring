@@ -19,8 +19,12 @@ public class Greeting(var id: Long, var content: String)
 @SpringBootApplication
 open class HelloSpringApplication
 
+// TO generate an production standalone exe check this:
+// mvn clean install
+// https://frontbackend.com/spring-boot/create-spring-boot-runnable-jar-file
+
 @RestController
-open class GreetingsController {
+class GreetingsController {
 	val template = "Hello %s!"
 	val atomicLong = AtomicLong()
 
