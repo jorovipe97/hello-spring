@@ -23,6 +23,8 @@ open class HelloSpringApplication
 // mvn clean install
 // https://frontbackend.com/spring-boot/create-spring-boot-runnable-jar-file
 
+// Spring will scan all the components of sub-packages of demo package
+
 @RestController
 class GreetingsController {
 	val template = "Hello %s!"
